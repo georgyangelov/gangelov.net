@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "http://gangelov.net/"
 languageCode = "bg-bg"
-title = "Just a blog"
+title = "Просто един блог"
 
 theme = "cactus-plus"
 
@@ -13,17 +13,16 @@ theme = "cactus-plus"
 hasCJKLanguage = false
 
 [params]
-	author = "Georgy Angelov <georgyangelov@gmail.com>"
-	description = "Just another blog for random programming thoughts"
+	author = "Георги Ангелов"
+	description = "Просто един блог за разни програмистки неща"
 
-    # TODO
-	bio = ""
+	bio = "The steps you take don't have to be big, they just need to take you in the right direction."
 
 	twitter = "stormbreakerbg"
 	facebook = "stormbreakerbg"
 
 	enableRSS = true
-	enableToc = true
+	enableToc = false
 
 	# enableDisqus = true
 	# disqusShortname = "your_disqus_short_name"
@@ -31,7 +30,7 @@ hasCJKLanguage = false
 	enableSummary = true
 
 	# Set the value to true if use description in post front matter replace content summary
-	useDescriptionReplaceSummary = false
+	useDescriptionReplaceSummary = true
 
     # TODO
 	enableGoogleAnalytics = false
@@ -42,7 +41,7 @@ hasCJKLanguage = false
 	# twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
-	customCSS = []
+	customCSS = ['css/custom.css', 'css/highlight-github.css']
 	customJS  = []
 
 	# The variables below are optionally too and can be used to
@@ -52,7 +51,7 @@ hasCJKLanguage = false
 	home = "Начало"
 	about = "За мен"
 	archive = "Архиви"
-	subscribe = ""
+	subscribe = "RSS"
 
 	olderPosts = "По-стари постове"
 	newerPosts = "По-нови постове"
@@ -63,7 +62,7 @@ hasCJKLanguage = false
 	readMore = "Прочети още"
 
 	# Share
-	enableShare = true
+	enableShare = false
 	tweet = ""
 	share = ""
 
