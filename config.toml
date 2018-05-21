@@ -5,8 +5,7 @@ title = "Просто един блог"
 
 theme = "cactus-plus"
 
-# TODO
-# googleAnalytics = "your_google_analytics_id"
+googleAnalytics = "UA-18376726-1"
 
 # Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages)
 # characters
@@ -32,8 +31,7 @@ hasCJKLanguage = false
 	# Set the value to true if use description in post front matter replace content summary
 	useDescriptionReplaceSummary = true
 
-    # TODO
-	enableGoogleAnalytics = false
+	enableGoogleAnalytics = true
 
 	# enableTwitterCard = true
 
