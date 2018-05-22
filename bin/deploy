@@ -1,0 +1,14 @@
+#!/bin/bash
+
+hugo
+
+aws s3 sync public/ s3://blog.gangelov.net/ \
+    --delete \
+    --acl public-read \
+    --cache-control max-age=3600,public
+
+aws s3 cp s3://blog.gangelov.net/index.html s3://blog.gangelov.net/index.html \
+    --acl public-read \
+    --metadata-directive REPLACE \
+    --cache-control max-age=0,no-cache,no-store,must-revalidate \
+    --content-type text/html

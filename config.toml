@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://gangelov.net/"
+baseURL = "https://blog.gangelov.net/"
 languageCode = "bg-bg"
 title = "Просто един блог"
 
