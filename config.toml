@@ -39,7 +39,7 @@ hasCJKLanguage = false
 	# twitterCardImage = ""
 
 	# Add custom assets with their paths relative to the static folder
-	customCSS = ['css/custom.css', 'css/highlight-github.css']
+	customCSS = ['css/custom.css']
 	customJS  = []
 
 	# The variables below are optionally too and can be used to
@@ -80,3 +80,7 @@ hasCJKLanguage = false
 	# facebook-square = "https://www.facebook.com/nodejh"
 	# twitter-square = "https://www.twitter.com/nodejh"
 	# github-square = "https://www.github.com/nodejh"
+
+[markup]
+	[markup.highlight]
+		style = "github"
