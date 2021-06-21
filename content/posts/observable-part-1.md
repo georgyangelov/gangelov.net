@@ -5,8 +5,6 @@ draft: false
 description: Implementing a completely functional Observable from first principles. A step-by-step guide of the ideas inside.
 ---
 
-# Let's Implement RxJS Observables - Part 1
-
 ## Why?
 
 > "If you can't explain it simply, you don't understand it well enough"
