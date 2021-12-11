@@ -239,4 +239,34 @@ The fundamental idea is that **code is the best and most appropriate representat
 
 Of course, distinguishing between data/configration and logic is sometimes difficult. It's also possible that what starts as a simple config-only tool with a couple of properties grows into a DIY-programmming-language monster (as I suspect happened with Artillery). However, if you're building a tool it's better to start with something that will provide room for growth. Because if you hit a wall you'd have to break the whole house down and build it again, which will inevitably alienate a big percentage of your users.
 
-I hope the next time you want to build a tool, or need to choose between tools, you think back to this dilemma and make an educated decision.
+## Artillery is a great tool
+
+It really is. My aim is not to bash on it but to use it as an illustration. And what I say above is not limited to JavaScript. In fact, other languages like Ruby, Scala and others will allow you to build a DSL that is much cleaner. Example in Ruby:
+
+```ruby
+load_test do
+  config(
+    target: 'https://example.com/api',
+    phases: [
+      { name: 'Warm up', duration: 60, arrivalRate: 5 },
+      { name: 'Ramp up load', duration: 120, arrivalRate: 5, rampTo: 50 },
+      { name: 'Sustained load', duration: 600, arrivalRate: 50 }
+    ],
+    payload: { path: 'keywords.csv', fields: ['keyword'] }
+  )
+
+  scenario 'Search and buy' do
+    results = get '/search', body: { kw: payload.keyword }
+
+    productId = results[0]['id']
+
+    get "/product/#{productId}/details"
+
+    sleep 5
+
+    post '/cart', body: { productId }
+  end
+end
+```
+
+I would be happy if the next time you want to build a tool, or need to choose between tools, you remember this and make an educated decision.
