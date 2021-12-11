@@ -3,12 +3,13 @@
 hugo
 
 aws s3 sync public/ s3://gangelov.net/blog \
+    --exact-timestamps \
     --acl public-read \
     --delete \
-    --cache-control max-age=3600,public
+    --cache-control max-age=300,public
 
 aws s3 cp s3://gangelov.net/blog/index.html s3://gangelov.net/blog/index.html \
     --acl public-read \
     --metadata-directive REPLACE \
-    --cache-control max-age=0,no-cache,no-store,must-revalidate \
+    --cache-control max-age=300,public \
     --content-type text/html
