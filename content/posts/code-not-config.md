@@ -239,4 +239,4 @@ The fundamental idea is that **code is the best and most appropriate representat
 
 Of course, distinguishing between data/configration and logic is sometimes difficult. It's also possible that what starts as a simple config-only tool with a couple of properties grows into a DIY-programmming-language monster (as I suspect happened with Artillery). However, if you're building a tool it's better to start with something that will provide room for growth. Because if you hit a wall you'd have to break the whole house down and build it again, which will inevitably alienate a big percentage of your users.
 
-I hope the next time you want to build a tool, or need to choose between tools, you think back to this dilemma and make the best decision.
+I hope the next time you want to build a tool, or need to choose between tools, you think back to this dilemma and make an educated decision.

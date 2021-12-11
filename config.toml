@@ -47,7 +47,7 @@ hasCJKLanguage = false
 
 	# Navigation links
 	home = "Начало"
-	about = "За мен"
+	# about = "За мен"
 	archive = "Архиви"
 	subscribe = "RSS"
 
