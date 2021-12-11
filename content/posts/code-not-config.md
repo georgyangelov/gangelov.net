@@ -1,7 +1,7 @@
 ---
-title: "Make libraries, not configs"
+title: "Support code, not configuration"
 date: 2021-12-12T01:10:00+03:00
-draft: true
+draft: false
 description: A case study of how tools can be made more flexible by being extensible with code instead of configuration
 ---
 
