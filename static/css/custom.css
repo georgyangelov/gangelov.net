@@ -49,3 +49,7 @@ pre code {
   font-size: 13px;
   color: #262626;
 }
+
+b, strong {
+  font-weight: 700;
+}
