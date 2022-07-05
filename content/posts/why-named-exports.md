@@ -45,7 +45,7 @@ At least in VSCode, auto-import of default exports is inconsistent. It's underst
 
 ## Re-exporting introduces another inconsistency
 
-Sometimes you have filed which aggregate exports. Maybe you're implementing a library. And there's a file where you have this:
+Sometimes you have files which aggregate exports. Maybe you're implementing a library. And there's a file where you have this:
 
 ```ts
 export * from 'views/user'
@@ -67,7 +67,7 @@ export *, { default as UsersList } from 'views/user-list'
 
 You're going to use named exports anyway. So why not just export all things as named? This way you won't have to make the arbitrary decision that one of the exports is somehow more important than the rest of them.
 
-## Named exports make the name stays the same
+## Named exports make the name stay the same
 
 And this is really the point. All imports will have the same name, so by definition all problems described above are solved. If you absolutely have to rename something, you can still do it (`import { UserView as User } from '...'`) but now it's opt-in and can't be done accidentally.
 
