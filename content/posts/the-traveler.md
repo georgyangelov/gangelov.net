@@ -1,5 +1,5 @@
 ---
-title: "[Short Story] The Traveler"
+title: "The Traveler"
 date: 2022-09-04T12:00:00+03:00
 draft: false
 description: A short fiction story
